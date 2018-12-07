@@ -1,0 +1,60 @@
+---
+dependency:
+  name: galaxy
+  options:
+    role-file: requirements.yml
+driver:
+  name: docker
+lint:
+  name: yamllint
+platforms:
+  - name: cve_2018_19788-alpine-edge
+    image: alpine:edge
+    command: sh -c "while true ; do sleep 1 ; done"
+  - name: cve_2018_19788-alpine-latest
+    image: alpine:latest
+    command: sh -c "while true ; do sleep 1 ; done"
+  - name: cve_2018_19788-archlinux
+    image: base/archlinux
+  - name: cve_2018_19788-centos-6
+    image: centos:6
+  - name: cve_2018_19788-centos-latest
+    image: centos:latest
+  - name: cve_2018_19788-debian-latest
+    image: debian:latest
+  - name: cve_2018_19788-debian-stable
+    image: debian:stable
+  - name: cve_2018_19788-debian-unstable
+    image: debian:unstable
+  - name: cve_2018_19788-fedora-latest
+    image: fedora:latest
+  - name: cve_2018_19788-fedora-rawhide
+    image: fedora:rawhide
+  - name: cve_2018_19788-opensuse-leap
+    image: opensuse:leap
+  - name: cve_2018_19788-opensuse-tumbleweed
+    image: opensuse:tumbleweed
+  - name: cve_2018_19788-ubuntu-artful
+    image: ubuntu:artful
+  - name: cve_2018_19788-ubuntu-devel
+    image: ubuntu:devel
+provisioner:
+  name: ansible
+  inventory:
+    group_vars:
+      all:
+        cve_2018_19788_ignore_docker: no
+    host_vars:
+      cve_2018_19788-fedora-rawhide:
+        ansible_python_interpreter: /usr/bin/python3
+  lint:
+    name: ansible-lint
+  config_options:
+    defaults:
+      callback_plugins: /usr/lib/python2.7/site-packages/ara/plugins/callbacks
+scenario:
+  name: default
+verifier:
+  name: goss
+  lint:
+    name: yamllint

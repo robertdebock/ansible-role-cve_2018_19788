@@ -1,0 +1,30 @@
+---
+# tasks file for cve_2018_19788
+- name: create a user
+  user:
+    name: cve_2018_19788
+    uid: "{{ cve_2018_19788_uid }}"
+
+- name: execute a systemctl command as root
+  service:
+    name: "{{ cve_2018_19788_service }}"
+    state: started
+  register: execute_root
+ 
+- name: execute a systemctl command as that user
+  service:
+    name: "{{ cve_2018_19788_service }}"
+    state: stopped
+  become: yes
+  become_user: cve_2018_19788
+  tags:
+    - skip_ansible_lint
+  ignore_errors: yes
+  register: execute_user
+
+- name: test if user can manage service
+  assert:
+    that:
+      - execute_root is succeeded
+      - execute_user is not succeeded
+    msg: "users can manage services"

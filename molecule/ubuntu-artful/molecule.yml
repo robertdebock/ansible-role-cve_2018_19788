@@ -1,0 +1,26 @@
+---
+dependency:
+  name: galaxy
+  options:
+    role-file: requirements.yml
+driver:
+  name: docker
+lint:
+  name: yamllint
+platforms:
+  - name: cve_2018_19788-ubuntu-artful
+    image: ubuntu:artful
+provisioner:
+  name: ansible
+  inventory:
+    group_vars:
+      all:
+        cve_2018_19788_ignore_docker: no
+  lint:
+    name: ansible-lint
+scenario:
+  name: ubuntu-artful
+verifier:
+  name: goss
+  lint:
+    name: yamllint

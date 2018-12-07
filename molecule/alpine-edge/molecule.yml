@@ -1,0 +1,27 @@
+---
+dependency:
+  name: galaxy
+  options:
+    role-file: requirements.yml
+driver:
+  name: docker
+lint:
+  name: yamllint
+platforms:
+  - name: cve_2018_19788-alpine-edge
+    image: alpine:edge
+    command: sh -c "while true ; do sleep 1 ; done"
+provisioner:
+  name: ansible
+  inventory:
+    group_vars:
+      all:
+        cve_2018_19788_ignore_docker: no
+  lint:
+    name: ansible-lint
+scenario:
+  name: alpine-edge
+verifier:
+  name: goss
+  lint:
+    name: yamllint
