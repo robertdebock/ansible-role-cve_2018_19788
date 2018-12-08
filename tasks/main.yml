@@ -10,7 +10,7 @@
     name: "{{ cve_2018_19788_service }}"
     state: started
   register: execute_root
- 
+
 - name: execute a systemctl command as that user
   service:
     name: "{{ cve_2018_19788_service }}"
