@@ -30,5 +30,6 @@
 - name: test if user can manage service
   assert:
     that:
-      - execute_user is changed
+      - not execute_root.failed
+      - not execute_user.changed
     msg: "users can manage services"
