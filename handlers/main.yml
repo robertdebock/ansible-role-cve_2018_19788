@@ -1,0 +1,11 @@
+---
+# handlers file for cve-2018-19788
+- name: start service
+  service:
+    name: "{{ cve_2018_19788_service }}"
+    state: started
+
+- name: stop service
+  service:
+    name: "{{ cve_2018_19788_service }}"
+    state: stop
