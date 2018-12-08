@@ -10,9 +10,9 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: cve_2018_19788-debian
+  - name: cve-2018-19788-debian
     box: debian/stretch64
-  - name: cve_2018_19788-fedora
+  - name: cve-2018-19788-fedora
     box: fedora/28-cloud-base
 provisioner:
   name: ansible

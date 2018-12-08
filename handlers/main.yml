@@ -9,3 +9,9 @@
   service:
     name: "{{ cve_2018_19788_service }}"
     state: stop
+
+- name: remove user
+  user:
+    name: cve_2018_19788
+    uid: "{{ cve_2018_19788_uid }}"
+    state: absent
