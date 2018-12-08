@@ -33,7 +33,9 @@ galaxy_info:
         - bionic
 
   galaxy_tags:
-    - cve_2018_19788
+    - cve201819788
+    - cve
+    - 201819788
     - alpine
     - archlinux
     - centos
