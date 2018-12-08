@@ -35,7 +35,6 @@ galaxy_info:
   galaxy_tags:
     - cve201819788
     - cve
-    - 201819788
     - alpine
     - archlinux
     - centos
