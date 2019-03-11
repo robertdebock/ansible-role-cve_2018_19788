@@ -19,7 +19,6 @@ This example is taken from `molecule/default/playbook.yml`:
   roles:
     - role: robertdebock.bootstrap
     - role: robertdebock.cve_2018_19788
-
 ```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
@@ -34,7 +33,6 @@ These variables are set in `defaults/main.yml`:
 
 # The uid to create.
 cve_2018_19788_uid: 2147483659
-
 ```
 
 Requirements
