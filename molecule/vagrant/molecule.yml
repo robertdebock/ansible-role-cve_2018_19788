@@ -3,33 +3,20 @@ dependency:
   name: galaxy
   options:
     role-file: requirements.yml
+lint:
+  name: yamllint
 driver:
   name: vagrant
   provider:
     name: virtualbox
-lint:
-  name: yamllint
 platforms:
-  - name: cve-2018-19788-centos-6
-    box: centos/6
-  - name: cve-2018-19788-centos-7
-    box: centos/7
-  - name: cve-2018-19788-debian
+  - name: cve_2018_19788-debian
     box: debian/stretch64
-  - name: cve-2018-19788-fedora
+  - name: cve_2018_19788-fedora
     box: fedora/29-cloud-base
-  - name: cve-2018-19788-ubuntu-16
-    box: generic/ubuntu1604
-  - name: cve-2018-19788-ubuntu-17
-    box: generic/ubuntu1704
-  - name: cve-2018-19788-ubuntu-18
-    box: generic/ubuntu1804
 provisioner:
   name: ansible
   lint:
     name: ansible-lint
-  config_options:
-    defaults:
-      callback_plugins: /usr/lib/python2.7/site-packages/ara/plugins/callbacks
 scenario:
   name: vagrant
