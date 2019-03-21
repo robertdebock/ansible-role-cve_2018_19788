@@ -52,9 +52,6 @@ platforms:
   - name: cve_2018_19788-ubuntu-devel
     image: ubuntu:devel
     pre_build_image: yes
-  - name: cve_2018_19788-ubuntu-latest
-    image: ubuntu:latest
-    pre_build_image: yes
 provisioner:
   name: ansible
   playbooks:
