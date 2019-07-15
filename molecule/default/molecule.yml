@@ -25,9 +25,6 @@ platforms:
   - name: cve_2018_19788-centos-latest
     image: centos:latest
     pre_build_image: yes
-  - name: cve_2018_19788-debian-latest
-    image: debian:latest
-    pre_build_image: yes
   - name: cve_2018_19788-debian-stable
     image: debian:stable
     pre_build_image: yes
