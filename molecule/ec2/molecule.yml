@@ -39,6 +39,10 @@ provisioner:
     converge: ../resources/playbook.yml
   lint:
     name: ansible-lint
+    options:
+      exclude:
+        - meta/version.yml
+        - meta/exception.yml
   inventory:
     host_vars:
       cve_2018_19788-ubuntu-18.04:
