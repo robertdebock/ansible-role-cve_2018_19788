@@ -6,6 +6,9 @@ cve_2018_19788
 
 Test if your system is vulernable for cve_2018_19788.
 
+<img src="https://img.shields.io/ansible/role/d/34979"/>
+<img src="https://img.shields.io/ansible/quality/34979"/>
+
 Example Playbook
 ----------------
 
