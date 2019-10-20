@@ -2,10 +2,11 @@
 # vars file for cve_2018_19788
 _cve_2018_19788_service:
   default: chronyd
+  Alpine: chronyd
   Archlinux: systemd-timesyncd
-  CentOS-6: ntpd
+  RedHat-7: ntpd
+  RedHat: chronyd
   Debian: systemd-timesyncd
-  openSUSE Leap: wicked
-  Ubuntu: systemd-timesyncd
+  Suse: wicked
 
-cve_2018_19788_service: "{{ _cve_2018_19788_service[ansible_distribution ~ '-' ~ ansible_distribution_major_version] | default(_cve_2018_19788_service[ansible_distribution] | default(_cve_2018_19788_service['default'] )) }}"
+cve_2018_19788_service: "{{ _cve_2018_19788_service[ansible_os_family ~ '-' ~ ansible_distribution_major_version] | default(_cve_2018_19788_service[ansible_os_family] | default(_cve_2018_19788_service['default'] )) }}"
