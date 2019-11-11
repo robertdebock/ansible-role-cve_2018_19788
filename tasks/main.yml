@@ -3,18 +3,11 @@
 - name: create user
   user:
     name: cve_2018_19788
-    uid: "{{ cve_2018_19788_uid }}"
+    uid: 2147483659
     state: present
   notify:
     - remove user
-
-- name: execute a systemctl command as root
-  service:
-    name: atd
-    state: started
-  register: execute_root
-  notify:
-    - stop service
+  failed_when: no
 
 - name: execute a systemctl command as that user
   service:
@@ -25,7 +18,7 @@
   register: execute_user
   notify:
     - start service
-  ignore_errors: yes
+  failed_when: no
 
 - name: clean up
   meta: flush_handlers
@@ -33,6 +26,5 @@
 - name: test if user can manage service
   assert:
     that:
-      - not execute_root.failed
       - not execute_user.changed
     msg: "users can manage services"

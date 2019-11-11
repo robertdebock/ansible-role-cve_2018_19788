@@ -35,17 +35,6 @@ The machine you are running this on, may need to be prepared.
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
-Role Variables
---------------
-
-These variables are set in `defaults/main.yml`:
-```yaml
----
-# defaults file for cve_2018_19788
-
-# The uid to create.
-cve_2018_19788_uid: 2147483659
-```
 
 Requirements
 ------------
