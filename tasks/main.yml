@@ -5,23 +5,16 @@
     name: cve_2018_19788
     uid: 2147483659
     state: present
-  notify:
-    - remove user
   failed_when: no
 
 - name: execute a systemctl command as that user
   service:
     name: atd
-    state: stopped
+    state: started
   become: yes
   become_user: cve_2018_19788
   register: execute_user
-  notify:
-    - start service
   failed_when: no
-
-- name: clean up
-  meta: flush_handlers
 
 - name: test if user can manage service
   assert:
