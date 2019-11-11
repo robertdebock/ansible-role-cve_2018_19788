@@ -2,16 +2,16 @@
 # handlers file for cve-2018-19788
 - name: start service
   service:
-    name: "{{ cve_2018_19788_service }}"
+    name: atd
     state: started
 
 - name: stop service
   service:
-    name: "{{ cve_2018_19788_service }}"
+    name: atd
     state: stop
 
 - name: remove user
   user:
     name: cve_2018_19788
-    uid: "{{ cve_2018_19788_uid }}"
+    uid: 2147483659
     state: absent
