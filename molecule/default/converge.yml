@@ -5,4 +5,4 @@
   gather_facts: yes
 
   roles:
-    - ansible-role-cve_2018_19788
+    - role: ansible-role-cve_2018_19788

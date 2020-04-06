@@ -17,7 +17,7 @@ This example is taken from `molecule/resources/converge.yml` and is tested on ea
   gather_facts: yes
 
   roles:
-    - robertdebock.cve_2018_19788
+    - role: robertdebock.cve_2018_19788
 ```
 
 The machine may need to be prepared using `molecule/resources/prepare.yml`:
