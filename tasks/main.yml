@@ -13,11 +13,11 @@
     state: started
   become: yes
   become_user: cve_2018_19788
-  register: execute_user
+  register: cve_2018_19788_execute_user
   failed_when: no
 
 - name: test if user can manage service
   assert:
     that:
-      - not execute_user.changed
+      - not cve_2018_19788_execute_user.changed
     msg: "users can manage services"
