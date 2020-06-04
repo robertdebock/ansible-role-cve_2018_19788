@@ -2,9 +2,9 @@
 
 Test if your system is vulernable for cve_2018_19788.
 
-|Travis|GitHub|Quality|Downloads|
-|------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-cve_2018_19788.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-cve_2018_19788)|[![github](https://github.com/robertdebock/ansible-role-cve_2018_19788/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-cve_2018_19788/actions)|[![quality](https://img.shields.io/ansible/quality/34979)](https://galaxy.ansible.com/robertdebock/cve_2018_19788)|[![downloads](https://img.shields.io/ansible/role/d/34979)](https://galaxy.ansible.com/robertdebock/cve_2018_19788)|
+|Travis|GitHub|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-cve_2018_19788.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-cve_2018_19788)|[![github](https://github.com/robertdebock/ansible-role-cve_2018_19788/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-cve_2018_19788/actions)|[![quality](https://img.shields.io/ansible/quality/34979)](https://galaxy.ansible.com/robertdebock/cve_2018_19788)|[![downloads](https://img.shields.io/ansible/role/d/34979)](https://galaxy.ansible.com/robertdebock/cve_2018_19788)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-cve_2018_19788.svg)](https://github.com/robertdebock/ansible-role-cve_2018_19788/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
