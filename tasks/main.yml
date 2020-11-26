@@ -1,5 +1,6 @@
 ---
 # tasks file for cve_2018_19788
+
 - name: create user
   user:
     name: cve_2018_19788
