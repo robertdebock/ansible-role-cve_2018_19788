@@ -2,14 +2,14 @@
 # tasks file for cve_2018_19788
 
 - name: create user
-  user:
+  ansible.builtin.user:
     name: cve_2018_19788
     uid: 2147483659
     state: present
   failed_when: no
 
 - name: execute a systemctl command as that user
-  service:
+  ansible.builtin.service:
     name: atd
     state: started
   become: yes
@@ -18,7 +18,7 @@
   failed_when: no
 
 - name: test if user can manage service
-  assert:
+  ansible.builtin.assert:
     that:
       - not cve_2018_19788_execute_user.changed
     msg: "users can manage services"
