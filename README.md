@@ -2,9 +2,9 @@
 
 Test if your system is vulernable for cve_2018_19788.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-cve_2018_19788/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-cve_2018_19788/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-cve_2018_19788/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-cve_2018_19788)|[![quality](https://img.shields.io/ansible/quality/34979)](https://galaxy.ansible.com/robertdebock/cve_2018_19788)|[![downloads](https://img.shields.io/ansible/role/d/34979)](https://galaxy.ansible.com/robertdebock/cve_2018_19788)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-cve_2018_19788.svg)](https://github.com/robertdebock/ansible-role-cve_2018_19788/releases/)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/robertdebock/ansible-role-cve_2018_19788/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-cve_2018_19788/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-cve_2018_19788/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-cve_2018_19788)|[![downloads](https://img.shields.io/ansible/role/d/24470)](https://galaxy.ansible.com/robertdebock/cve_2018_19788)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-cve_2018_19788.svg)](https://github.com/robertdebock/ansible-role-cve_2018_19788/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -74,7 +74,7 @@ The minimum version of Ansible required is 2.12, tests have been done to:
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-cve_2018_19788/issues)
+If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-cve_2018_19788/issues).
 
 ## [License](#license)
 
