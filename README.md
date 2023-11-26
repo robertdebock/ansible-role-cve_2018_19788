@@ -1,4 +1,4 @@
-# Ansible role [cve_2018_19788](#cve_2018_19788)
+# [Ansible role cve_2018_19788](#cve_2018_19788)
 
 Test if your system is vulernable for cve_2018_19788.
 
