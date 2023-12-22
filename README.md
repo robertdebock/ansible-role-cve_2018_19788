@@ -1,5 +1,7 @@
 # [Ansible role cve_2018_19788](#cve_2018_19788)
 
+> THIS ROLE HAS BEEN ARCHIVED AS OF DEC 2023.
+
 Test if your system is vulernable for cve_2018_19788.
 
 |GitHub|GitLab|Downloads|Version|
